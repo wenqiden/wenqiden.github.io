@@ -1,0 +1,167 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+    <title>CMU IS Projects</title>
+
+    <!-- Bootstrap core CSS -->
+    <script defer src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    
+    <!-- Custom styles for this template -->
+    <link href="./static/css/style.css" rel="stylesheet">
+    <script defer src="./static/js/project_filter_script.js"></script>
+
+
+</head>
+
+<header>
+    <nav class="navbar navbar-expand-md navbar-dark fixed-top" style="background-color:#931120; height: 10vh;">
+        <a class="navbar-brand" href="https://www.cmu.edu/"><img src="./static/img/CMU_White.png"></a>
+        <button class="navbar-toggler d-lg-none" type="button" data-toggle="collapse" data-target="#navbarsExampleDefault" aria-controls="navbarsExampleDefault" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse justify-content-end" id="navbarsExampleDefault">
+            <ul class="navbar-nav navbar-right">
+                <li class="nav-item active">
+                    <a class="nav-link hover-underline-animation" href="index.html" style="color: white; font-weight: bold;">Home<span class="sr-only">(current)</span></a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link hover-underline-animation" href="projects.html" style="color: white; font-weight: bold;">Projects</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link hover-underline-animation" href="becomepartner.html" style="color: white; font-weight: bold;">Apply</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+</header>
+
+<body id="homeBody">
+    <div class="container filter-list" id="filter-list">
+        <h4 class="filter-title">View</h4>
+        <label class="view"><input class="view-input" type="radio" name="view-type" value="tile" checked >Tile</label>
+        <label class="view"><input class="view-input" type="radio" name="view-type" value="row">Row</label>
+        <h4 class="filter-title">Years</h4>
+        <label class="year"><input class="year-input-all" id="year-all" type="checkbox" checked >Select all</label>
+        <br>
+        <label class="year"><input class="year-input" type="checkbox" checked >2023</label>
+        <label class="year"><input class="year-input" type="checkbox" checked >2022</label>
+        <label class="year"><input class="year-input" type="checkbox" checked >2021</label>
+        <label class="year"><input class="year-input" type="checkbox" checked >2020</label>
+        <label class="year"><input class="year-input" type="checkbox" checked >2019</label>
+        <label class="year"><input class="year-input" type="checkbox" checked >2018</label>
+        <label class="year"><input class="year-input" type="checkbox" checked >2017</label>
+        <label class="year"><input class="year-input" type="checkbox" checked >2016</label>
+        <label class="year"><input class="year-input" type="checkbox" checked >2015</label>
+        
+        <h4 class="filter-title">Sustainable Development Goal</h4>
+        <label class="goal"><input class="goal-input-all" id="goal-all" type="checkbox" checked >Select all</label>
+        <label class="goal"><input class="goal-input" type="checkbox" checked >1. CleanEnergy</label>
+        <label class="goal"><input class="goal-input" type="checkbox" checked >2. CleanWater</label>
+        <label class="goal"><input class="goal-input" type="checkbox" checked >3. ClimateAction</label>
+        <label class="goal"><input class="goal-input" type="checkbox" checked >4. Equality</label>
+        <label class="goal"><input class="goal-input" type="checkbox" checked >5. Gender Equality</label>
+        <label class="goal"><input class="goal-input" type="checkbox" checked >6. Good Health and Well-being</label>
+        <label class="goal"><input class="goal-input" type="checkbox" checked >7. Industry Innovation Infrastructure</label>
+        <label class="goal"><input class="goal-input" type="checkbox" checked >8. Life On Land</label>
+        <label class="goal"><input class="goal-input" type="checkbox" checked >9. Life Below Water</label>
+        <label class="goal"><input class="goal-input" type="checkbox" checked >10. No Poverty</label>
+        <label class="goal"><input class="goal-input" type="checkbox" checked >11. Partnership for Goals</label>
+        <label class="goal"><input class="goal-input" type="checkbox" checked >12. Peace and Inclusion</label>
+        <label class="goal"><input class="goal-input" type="checkbox" checked >13. Promote Health</label>
+        <label class="goal"><input class="goal-input" type="checkbox" checked >14. Quality Education</label>
+        <label class="goal"><input class="goal-input" type="checkbox" checked >15. Responsible Consumption</label>
+        <label class="goal"><input class="goal-input" type="checkbox" checked >16. Sustainable Cities</label>
+        <label class="goal"><input class="goal-input" type="checkbox" checked >17. Work Economic Growth</label>
+        <label class="goal"><input class="goal-input" type="checkbox" checked >18. Zero Hunger</label>
+
+        <h4 class="filter-title">Technology Implemented</h4>
+        <label class="tech"><input class="tech-input-all" id="tech-all" type="checkbox" checked >Select all</label>
+        <label class="tech"><input class="tech-input" type="checkbox" checked >1. API</label>
+        <label class="tech"><input class="tech-input" type="checkbox" checked >2. Application Integration</label>
+        <label class="tech"><input class="tech-input" type="checkbox" checked >3. CRM</label>
+        <label class="tech"><input class="tech-input" type="checkbox" checked >4. Data Analytics</label>
+        <label class="tech"><input class="tech-input" type="checkbox" checked >5. Database Solution</label>
+        <label class="tech"><input class="tech-input" type="checkbox" checked >6. Geographic Information System</label>
+        <label class="tech"><input class="tech-input" type="checkbox" checked >7. Information Kiosk</label>
+        <label class="tech"><input class="tech-input" type="checkbox" checked >8. Information Security & Risk</label>
+        <label class="tech"><input class="tech-input" type="checkbox" checked >9. Mobile App</label>
+        <label class="tech"><input class="tech-input" type="checkbox" checked >10. Social Media</label>
+        <label class="tech"><input class="tech-input" type="checkbox" checked >11. Software Integration</label>
+        <label class="tech"><input class="tech-input" type="checkbox" checked >12. Technology Strategy</label>
+        <label class="tech"><input class="tech-input" type="checkbox" checked >13. User Experience</label>
+        <label class="tech"><input class="tech-input" type="checkbox" checked >14. Web App</label>
+        <div class="placeholder"></div>
+    </div>
+    <div class="container" id="project-main-container">
+        <div class="row titles">
+            <h1 class="display-1 title">Projects</h1>
+            <h2 class="display-4 subtitle">This page displays past projects for CMU Consulting Project at the Information Systems Department.</h2>
+        </div>
+        <div class="row search-container">
+            <div class="search">
+            <input class="search-bar" type="text" placeholder="Search for a project by project or student name...">
+            <button class="search-btn" type="submit"><i class="fa fa-search"></i></button>
+            </div>
+        </div>
+        <div class="row">
+            <button id="filter-btn">filter</button>
+        </div>
+        <div class="row logos-container">
+            <div class="logos">
+                <a data-bs-toggle="modal" href="#exampleModal"><img class="logo" src="./static/img/logos/412connect.png"></a>
+                <a href="https://cmuisprojects.org/PDFs/s23/Amachi.pdf"><img class="logo" src="./static/img/logos/amachi.png"></a>
+                <a href="https://cmuisprojects.org/PDFs/s23/BCAP.pdf"><img class="logo" src="./static/img/logos/bcap.png"></a>
+                <a href="https://cmuisprojects.org/PDFs/s23/CSP.pdf"><img class="logo" src="./static/img/logos/cfsp.png"></a>
+                <a href="https://cmuisprojects.org/PDFs/s23/ComputerReach.pdf"><img class="logo" src="./static/img/logos/computer.png"></a>
+                <a href="https://cmuisprojects.org/PDFs/s23/CORE.pdf"><img class="logo" src="./static/img/logos/core.png"></a>
+                <a href="https://cmuisprojects.org/PDFs/s23/EIC.pdf"><img class="logo" src="./static/img/logos/equityimpact.png"></a>
+                <a href="https://cmuisprojects.org/PDFs/s23/FAAP.pdf"><img class="logo" src="./static/img/logos/faap.png"></a>
+            </div>
+        </div>
+        <div class="modal fade" id="exampleModal" aria-labelledby="exampleModalLabel" aria-hidden="true">
+            <div class="modal-dialog">
+              <div class="modal-content">
+                <div class="modal-header">
+                  <h5 class="modal-title" id="exampleModalLabel">412Connect</h5>
+                  <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <img style="width: 10vw;" src="./static/img/logos/412connect.png">
+                    <h2 style="font-size: 1.5rem;">Project Description</h2>
+                    <p>412Connect aims to showcase organizations from marginalized communities to local university students through an online scavenger hunt. The CMU IS student team primarily worked on addressing the current pain points of the website by redesigning the user dashboard, revamping the user authentication process, and remodeling user feedback collection. These changes should create a more intuitive user experience that helps the platform better retain students down the line.</p>
+                    <h2 style="font-size: 1.5rem; margin-top: 2vw;">Student Development Team</h2>
+                    <p>Danagul Azimzhanova, Jacky He, Kevin Lin, Eric Rohrer</p>
+                </div>
+                <div class="modal-footer">
+                  <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                  <a href="https://cmuisprojects.org/PDFs/s23/412Connect.pdf"><button type="button" class="btn btn-primary" style="border-color:#931120; background-color: #931120;">More Info</button></a>
+                </div>
+              </div>
+            </div>
+          </div>
+        <div class="row">
+            <div class="project-btn-container">
+                <a href="becomepartner.html"><button class="apply-btn" style="background-color: #008F91">Apply to be a Partner</button></a>
+            </div>
+        </div>
+    </div>
+</body>
+
+<!-- footer -->
+<footer>
+    &copy; Information Systems at Carnegie Mellon University | 5000 Forbes Avenue, Pittsburgh, PA 15213 | (412) 268-3259
+</footer>
+</html>

@@ -1,0 +1,475 @@
+div.row {
+    margin-top: 2vw;
+}
+
+h1.title {
+    text-align: center;
+    display: block;
+    margin: auto;
+    margin-top: 6vw;
+    font-family: 'Arimo', sans-serif;
+    font-size: 2rem;
+    width: 45%;
+    font-weight: bold;
+    width: 100%;
+}
+
+footer {
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    height: 6vh;
+    background-color:#931120;
+    color: white;
+    text-align: center;
+    font-family: 'Arimo', sans-serif;
+    font-size: 1rem;
+    padding-top: 0.5rem;
+}
+
+a.navbar-brand {
+    margin-left: 1vw;
+}
+
+a.nav-link {
+    color: white;
+    font-family: 'Arimo', sans-serif;
+    font-size: 1rem;
+    font-weight: bold;
+}
+
+p {
+    display: inline;
+}
+
+
+img.img-background {
+    position: absolute;
+    left: 0;
+    z-index: -1;
+    opacity: 0.8;
+}
+
+div.banner {
+    background-color: white;
+    opacity: 0.6;
+    margin-top: 5.5vw;
+    padding: 7.5vw;
+    position: absolute;
+    left: 0;
+}
+
+div.inner-banner {
+    opacity: 1;
+    margin-top: 8.5vw;
+    z-index: 1;
+    text-align: center;
+    font-family: 'Arimo', sans-serif;
+    font-size: 1.25em;
+}
+
+button.apply-btn {
+    display: inner-block;
+    margin-top: 1.2vw;
+    align-items: center;
+    appearance: none;
+    background-color: #1F4C4C;
+    border-radius: 4px;
+    border-width: 0;
+    width:max-content;
+    box-shadow: rgba(45, 35, 66, 0.4) 0 2px 4px,rgba(45, 35, 66, 0.3) 0 7px 13px -3px,#193d3d 0 -3px 0 inset;
+    box-sizing: border-box;
+    color: white;
+    cursor: pointer;
+    display: inline-flex;
+    font-family: "Arimo", sans-serif;
+    justify-content: center;
+    line-height: 1;
+    list-style: none;
+    overflow: hidden;
+    padding: 1vw;
+    position: relative;
+    text-align: left;
+    text-decoration: none;
+    transition: box-shadow .15s,transform .15s;
+    user-select: none;
+    -webkit-user-select: none;
+    touch-action: manipulation;
+    white-space: nowrap;
+    will-change: box-shadow,transform;
+    font-size: 1rem;
+    font-weight: bold;
+    margin-left: 3vw;
+    margin-right: 3vw;
+}
+
+button.apply-btn:focus {
+    box-shadow: #193d3d 0 0 0 1.5px inset, rgba(45, 35, 66, 0.4) 0 2px 4px, rgba(45, 35, 66, 0.3) 0 7px 13px -3px, #193d3d 0 -3px 0 inset;
+}
+
+button.apply-btn:hover {
+    box-shadow: rgba(45, 35, 66, 0.4) 0 4px 8px, rgba(45, 35, 66, 0.3) 0 7px 13px -3px, #193d3d 0 -3px 0 inset;
+    transform: translateY(-2px);
+}
+
+button.apply-btn:active {
+    box-shadow: #193d3d 0 3px 7px inset;
+    transform: translateY(2px);
+}
+
+
+/* reference: https://www.30secondsofcode.org/css/s/hover-underline-animation */
+a.hover-underline-animation {
+    display: inline-block;
+    position: relative;
+    color: white;
+}
+  
+a.hover-underline-animation::after {
+    content: '';
+    position: absolute;
+    width: 100%;
+    transform: scaleX(0);
+    height: 0.2vw;
+    bottom: 0;
+    left: 0;
+    background-color: white;
+    transform-origin: bottom right;
+    transition: transform 0.25s ease-out;
+}
+a.hover-underline-animation:hover::after {
+    transform: scaleX(1);
+    transform-origin: bottom left;
+}
+
+
+
+div.home-description {
+    font-family: 'Arimo', sans-serif;
+    font-size: 1em;
+    width: 65%;
+    margin: auto;
+    margin-top: 10vw;
+}
+
+ul {
+    display: inline-block;
+}
+
+li {
+    margin: 2vw;
+}
+
+div#testimonialIndicators {
+    margin-bottom: 2vw;
+}
+
+
+div.home-button-container {
+    margin-bottom: 10vw;
+    text-align: center;
+}
+
+h2.testimonial-title {
+    font-family: 'Arimo', sans-serif;
+    font-size: 1.3rem;
+    text-align: center;
+    display: block;
+    font-weight: bold;
+    margin-bottom: 2vw;
+}
+
+h2.subtitle {
+    font-size: 1.2rem;
+    text-align: center;
+    font-family: 'Arimo', sans-serif;
+    margin: auto;
+    width: 55%;
+    margin-top: 2vw;
+    display: block;
+}
+
+img.testimonial-img {
+    width: 10vw;
+    height: 10vw;
+    border-radius: 50%;
+    display: inline-block;
+    margin: 1vw;
+    margin-top: -10vw;
+}
+
+.carousel-control-next, .carousel-control-prev, .carousel-indicators {
+    filter: invert(100%);
+}
+
+div.testimonial-text {
+    font-family: 'Arimo', sans-serif;
+    width: 60%;
+    display: inline-block;
+    height: 15vw;
+    margin-bottom: 5vw;
+}
+
+div.testimonial-card {
+    border: 1px solid #ddd;
+    padding-top: 2vw;
+    height: 20vw;
+    text-align: center;
+}
+
+div.titles {
+    text-align: center;
+}
+
+button.search-btn {
+    width: 2.8vw;
+    height: 2.8vw;
+    text-align: center;
+    margin: auto;
+    display: inline-block;
+    border-radius: 10%;
+    border: none;
+}
+
+button.search-btn:hover {
+    box-shadow: 0 0 0 0.1rem rgba(131, 131, 131, 0.25);
+}
+
+i {
+    margin: auto;
+    display: inline-block;
+}
+
+input.search-bar {
+    width: 65vw;
+    display: inline-block;
+    margin: auto;
+    background-color: #FFF3D2;
+    border: none;
+    padding: 0.5vw;
+    border-radius: 0.7vw;
+}
+
+div.search {
+    text-align: center;
+    width: max-content;
+    display: inline-block;
+}
+
+div.search-container {
+    display: block;
+    text-align: center;
+}
+
+button#filter-btn {
+    width: 68vw;
+    display: inline-block;
+    margin: auto;
+    margin-top: -1vw;
+    border: none;
+    font-size: 1rem;
+    font-style: italic;
+    color: grey;
+    text-align: left;
+    height: 2.5vw;
+}
+
+button#filter-btn:hover {
+    box-shadow: 0 0 0 0.1rem rgba(131, 131, 131, 0.25);
+}
+
+div#project-main-container {
+    z-index: 0;
+}
+
+
+div.logos-container {
+    text-align: center;
+    display: block;
+}
+
+div.logos {
+    background-color: #E4E8E3;
+    overflow: scroll;
+    height: 23vw;
+    width: 80vw;
+    margin: auto;
+}
+
+div.project-btn-container {
+    text-align: center;
+    margin-bottom: 5vw;
+}
+
+img.logo {
+    width: 15vw;
+    height: 15vw;
+    margin: 1.5vw;
+    display: inline-block;
+}
+
+
+div.filter-list {
+    width: 40vw;
+    position: fixed;
+    height: 85vh;
+    float: left;
+    background-color: rgba(255, 255, 255, 0.7);
+    overflow: scroll;
+    margin-top: 5vh;
+    z-index: 1;
+    display: none;
+}
+
+h4.filter-title {
+    font-family: 'Arimo', sans-serif;
+    font-size: 1.3rem;
+    display: block;
+    margin-bottom: 1vw;
+    margin-top: 2.5vw;
+    margin-left: 1vw;
+    opacity: 1;
+}
+
+label.view {
+    margin-left: 1vw;
+    display: block;
+}
+
+input.view-input {
+    margin-right: 0.5vw;
+}
+
+label.year {
+    margin-left: 1vw;
+    display: inline-block;
+    width: 30%;
+}
+
+input.year-input {
+    margin-right: 0.5vw;
+}
+
+input.year-input-all {
+    margin-right: 0.5vw;
+    margin-bottom: 0.5vw;
+}
+
+label.goal {
+    margin-left: 1vw;
+    margin-bottom: 0.5vw;
+    display: block;
+}
+
+
+input.goal-input {
+    margin-right: 0.5vw;
+}
+
+
+label.tech {
+    margin-left: 1vw;
+    margin-bottom: 0.5vw;
+    display: block;
+}
+
+
+input.tech-input {
+    margin-right: 0.5vw;
+}
+
+div.placeholder {
+    margin-top: 2vw;
+}
+
+
+@keyframes typing {
+    from {
+      width: 0
+    }
+  }
+      
+  @keyframes blink {
+    50% {
+      border-color: transparent
+    }
+  }
+  
+  @keyframes fade-in {
+      100% {
+        opacity: 1;
+        filter: blur(0);
+      }
+  }
+  
+
+
+/* Steve-Stuff */
+
+#apply-texts {
+    margin-top: 0; /* No margin at the top */
+    margin-bottom: 2rem; /* Adjust bottom margin as needed, relative to root font size */
+    margin-left: auto; /* Keeps the element centered horizontally */
+    margin-right: auto; /* Keeps the element centered horizontally */
+    max-width: 80%; /* Adjust the maximum width as needed to maintain a good layout */
+}
+
+#apply-forms {
+    margin-top: 0; /* No margin at the top */
+    margin-bottom: 5rem; /* Adjust bottom margin as needed, relative to root font size */
+    margin-left: auto; /* Keeps the element centered horizontally */
+    margin-right: auto; /* Keeps the element centered horizontally */
+    max-width: 80%; /* Adjust the maximum width as needed to maintain a good layout */
+}
+
+input.goal-input-all {
+    margin-right: 0.5vw;
+}
+
+input.tech-input-all {
+    margin-right: 0.5vw;
+}
+
+
+  @keyframes blink {
+    50% {
+      border-color: transparent
+    }
+  }
+  
+  @keyframes fade-in {
+      100% {
+        opacity: 1;
+        filter: blur(0);
+      }
+  }
+  
+h5#typewrite {
+    width: max-content;
+    padding: 0.1vw;
+    display: block;
+    animation: blink .5s step-end infinite alternate;
+    overflow: hidden;
+    white-space: nowrap;
+    border-right: 0.2vw solid;
+    margin: auto;
+}
+
+img.scotty-left {
+    float: left;
+    width: 10vw;
+    transform: scaleX(-1);
+    margin-left: 10vw;
+    filter: blur(4px);
+    animation: transform 0.75s forwards, fade-in 0.5s 0.5s forwards cubic-bezier(0.11, 0, 0.5, 0);
+    animation-delay: 0.3s;
+}
+
+img.scotty-right {
+    float: right;
+    width: 10vw;
+    filter: blur(4px);
+    margin-right: 10vw;
+    animation: transform 0.75s forwards, fade-in 0.5s 0.5s forwards cubic-bezier(0.11, 0, 0.5, 0);
+    animation-delay: 0.3s;
+}
