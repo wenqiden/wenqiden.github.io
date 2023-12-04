@@ -229,6 +229,7 @@ button.search-btn {
     display: inline-block;
     border-radius: 10%;
     border: none;
+    background-color: rgb(210, 210, 210);
 }
 
 button.search-btn:hover {
@@ -531,6 +532,7 @@ footer {
     font-size: 1vw;
 }
 
+
 div.section-title {
     margin-top: 2.5vw;
     margin-bottom: 2.5vw;
@@ -613,6 +615,9 @@ div.section-title {
     }
     ul {
        width: 100%;
+    }
+    i {
+        margin-left: -2vw;
     }
     div.home-description {
         font-family: 'Arimo', sans-serif;
