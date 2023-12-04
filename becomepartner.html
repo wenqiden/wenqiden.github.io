@@ -23,52 +23,55 @@
 
 </head>
 
-<header>
-    <nav class="navbar navbar-expand-md navbar-dark fixed-top" style="background-color:#931120; height: 10vh;">
-        <a class="navbar-brand" href=" "><img src="./static/img/CMU_White.png"></a >
-        <button class="navbar-toggler d-lg-none" type="button" data-toggle="collapse" data-target="#navbarsExampleDefault" aria-controls="navbarsExampleDefault" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
-        </button>
 
-        <div class="collapse navbar-collapse justify-content-end" id="navbarsExampleDefault">
-            <ul class="navbar-nav navbar-right">
-                <li class="nav-item active">
-                    <a class="nav-link hover-underline-animation" href="index.html" style="color: white; font-weight: bold;">Home<span class="sr-only">(current)</span></a >
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link hover-underline-animation" href="projects.html" style="color: white; font-weight: bold;">Projects</a >
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link hover-underline-animation" href="becomepartner.html" style="color: white; font-weight: bold;">Apply</a >
-                </li>
-            </ul>
-        </div>
-    </nav>
-</header>
 
 <body id="homeBody">
+    <header>
+        <nav class="navbar navbar-expand-md navbar-dark fixed-top" style="background-color:#931120; height: 10vh;">
+            <a class="navbar-brand" href="https://www.cmu.edu/"><img class="cmu-brand" src="./static/img/CMU_White.png"></a>
+            
+            <ul class="navbar-nav">
+                <li class="nav-item active">
+                    <a class="nav-link hover-underline-animation" href="index.html" style="color: white; font-weight: bold;">Home<span class="sr-only">(current)</span></a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link hover-underline-animation" href="projects.html" style="color: white; font-weight: bold;">Projects</a>
+                </li>
+                <li class="nav-item last">
+                    <a class="nav-link hover-underline-animation" href="becomepartner.html" style="color: white; font-weight: bold;">Apply</a>
+                </li>
+            </ul>
+        </nav>
+    </header>
     <div class="container">
+        
         <div class="row">
             <h1 class="display-1 title">Community Partners</h1>
         </div>
-    </div>
+        <div id="breadcrumb-home" style="--bs-breadcrumb-divider: url(&#34;data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='8' height='8'%3E%3Cpath d='M2.5 0L1 1.5 3.5 4 1 6.5 2.5 8l4-4-4-4z' fill='currentColor'/%3E%3C/svg%3E&#34;);" aria-label="breadcrumb">
+            <ol class="breadcrumb" style="width:max-content;">
+              <li style="width:max-content; position:relative; left:6vw;"  class="breadcrumb-item"><a style="width:max-content;" href="index.html">Home</a></li>
+              <li style="width:max-content; position:relative; left:3vw;"  class="breadcrumb-item"><a style="width:max-content;" href="projects.html">Project</a></li>
+              <li class="breadcrumb-item active" aria-current="page">Apply</li>
+            </ol>
+        </div>
 
     <div id="apply-texts">
-        <div id="benefits">
+        <div class="section-title" id="benefits">
             <div class="apply-title">
                 <h5 class="apply-description">Benefits</h5>
                 <p>Student Consultants work, as a team, with community partners throughout the semester to identify, plan, and implement ways in which technology can help the organization better fulfill its mission. Teams act as consultants working 'with' and not 'for' their project clients. At the completion of the project, each team must provide a sustainable solution that fits the client's objectives, organization constraints and capabilities.</p>
             </div>
         </div>
 
-        <div id="expectations">
+        <div class="section-title" id="expectations">
             <div class="apply-title">
                 <h5 class="apply-description">Expectations</h5>
                 <p>There is no fee to participate, but organizations must invest significant time and effort during the semester-long partnership to achieve sustainable technology improvements.</p>
                 <ul>
                     <li>Invest your time</li>
-                    <li>Attend the mandatory Community Partner Orientation Meeting at the Carnegie Mellon University campus on Wednesday, January 31, 2024 from 11:00am - 2:00pm at the Cohon University Center.</li>
-                    <li>Make a required brief presentation with the student team at the end of the semester at the Community Technology Forum at the Carnegie Mellon University campus on Friday, May 3, 2024 from 12:00pm - 4:00pm and stay for the entire session to hear about and celebrate all partnership presentations.</li>
+                    <li>Attend the mandatory Community Partner Orientation Meeting at the Carnegie Mellon University campus.</li>
+                    <li>Make a required brief presentation with the student team at the end of the semester at the Community Technology Forum at the Carnegie Mellon University campus and stay for the entire session to hear about and celebrate all partnership presentations.</li>
                     <li>Your presence at these meetings is very important. Please advise us if you have a constraint on these days.</li>
                     <li>Meet and work with the team each and every week for at least 1 hour. Provide timely feedback to the student team on progress, proposals, deliverables, technology demos, etc. as requested.</li>
                     <li>Provide biweekly brief feedback on the team and the project progress via a short online form and periodic conversations with the supervising faculty member.</li>
@@ -77,21 +80,21 @@
             </div>
         </div>
         
-        <div id="67-373">
+        <div class="section-title" id="67-373">
             <div class="apply-title">
-                <h5 class="apply-description">67-373</h5>
+                <h5 class="apply-description">67-373: Get a fully working sustainable technical solution for your system (Fall semester)</h5>
                 <p>67-373 is the Capstone experiential learning course for CMU’s undergraduate Information Systems (IS) majors. The IS program is a top-rated undergraduate major that combines technical skills like computer science, software engineering, database design, web and mobile app programming with a humanities and human centered approach to solve real-world problems using technology.</p>
             </div>
         </div>
 
-        <div id="67-240">
+        <div class="section-title" id="67-240">
             <div class="apply-title">
-                <h5 class="apply-description">67-240</h5>
+                <h5 class="apply-description">67-240: Redesign your website and getting a working prototyp (Spring semester)</h5>
                 <p>67-240 teaches students how to design and build a responsive web page for a client interested in a well-designed site. In this course students leverage a user-centered approach to design wireframes, capture client feedback, and implement a prototype. Through this process, community partner clients gain clarity about the direction and priorities for their website or app interface.</p>
             </div>
         </div>
 
-        <div id="CMUQatar">
+        <div class="section-title" id="CMUQatar">
             <div class="apply-title">
                 <h5 class="apply-description">CMU Qatar</h5>
                 <p>CMU’s campus in Doha, Qatar also offers the undergraduate Information Systems major. The CMUQ 67-373 has similar requirements and outcomes to the Pittsburgh offering. For a small business or mission-focused organization in Doha, this can be a meaningful way to engage with CMU students and gain valuable technical consulting to further the organization’s mission.</p>
@@ -110,9 +113,15 @@
         <!-- Script for switching between forms -->
         <script src="./static/js/form_switching_script.js"></script>
     </div>
+    </div>
+</body>
 
 <!-- footer -->
-<footer>
+<footer style="z-index: 1;">
     &copy; Information Systems at Carnegie Mellon University | 5000 Forbes Avenue, Pittsburgh, PA 15213 | (412) 268-3259
+    <br>
+    Current website prototyping and development © Wenqi Deng, Steve Zhou, Katherine Makarska 
+    <br>
+    Previous website prototyping and development © Erin Dieringer, Zoe Feng, Arnav Luthra, Abbey Mui and Pooja Penninti. <br>
 </footer>
 </html>

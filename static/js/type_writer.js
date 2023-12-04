@@ -17,4 +17,7 @@ function typeWriter() {
     setTimeout(typeWriter, speed);
   }
 }
-typeWriter()
+
+if (window.innerWidth > 576) {
+  typeWriter()
+}

@@ -25,31 +25,28 @@
 
 </head>
 
-<header>
-    <nav class="navbar navbar-expand-md navbar-dark fixed-top" style="background-color:#931120; height: 10vh;">
-        <a class="navbar-brand" href="https://www.cmu.edu/"><img src="./static/img/CMU_White.png"></a>
-        <button class="navbar-toggler d-lg-none" type="button" data-toggle="collapse" data-target="#navbarsExampleDefault" aria-controls="navbarsExampleDefault" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
-        </button>
 
-        <div class="collapse navbar-collapse justify-content-end" id="navbarsExampleDefault">
-            <ul class="navbar-nav navbar-right">
+
+<body id="homeBody">
+    <header>
+        <nav class="navbar navbar-expand-md navbar-dark fixed-top" style="background-color:#931120; height: 10vh;">
+            <a class="navbar-brand" href="https://www.cmu.edu/"><img class="cmu-brand" src="./static/img/CMU_White.png"></a>
+            
+            <ul class="navbar-nav">
                 <li class="nav-item active">
                     <a class="nav-link hover-underline-animation" href="index.html" style="color: white; font-weight: bold;">Home<span class="sr-only">(current)</span></a>
                 </li>
                 <li class="nav-item">
                     <a class="nav-link hover-underline-animation" href="projects.html" style="color: white; font-weight: bold;">Projects</a>
                 </li>
-                <li class="nav-item">
+                <li class="nav-item last">
                     <a class="nav-link hover-underline-animation" href="becomepartner.html" style="color: white; font-weight: bold;">Apply</a>
                 </li>
             </ul>
-        </div>
-    </nav>
-</header>
-
-<body id="homeBody">
+        </nav>
+    </header>
     <div class="container filter-list" id="filter-list">
+        <button id="filter-close-btn"><i class="fa fa-close"></i></button>
         <h4 class="filter-title">View</h4>
         <label class="view"><input class="view-input" type="radio" name="view-type" value="tile" checked >Tile</label>
         <label class="view"><input class="view-input" type="radio" name="view-type" value="row">Row</label>
@@ -140,9 +137,11 @@
                 </div>
                 <div class="modal-body">
                     <img style="width: 10vw;" src="./static/img/logos/412connect.png">
-                    <h2 style="font-size: 1.5rem;">Project Description</h2>
+                    <h2 style="font-size: 1.3rem;">Community Parner</h2>
+                    <p>&copy; 412Connect<br>Sera Linardi, Ivy Chang, Leo Jung</p>
+                    <h2 style="font-size: 1.3rem; margin-top: 2vw;"">Project Description</h2>
                     <p>412Connect aims to showcase organizations from marginalized communities to local university students through an online scavenger hunt. The CMU IS student team primarily worked on addressing the current pain points of the website by redesigning the user dashboard, revamping the user authentication process, and remodeling user feedback collection. These changes should create a more intuitive user experience that helps the platform better retain students down the line.</p>
-                    <h2 style="font-size: 1.5rem; margin-top: 2vw;">Student Development Team</h2>
+                    <h2 style="font-size: 1.3rem; margin-top: 2vw;">Student Development Team</h2>
                     <p>Danagul Azimzhanova, Jacky He, Kevin Lin, Eric Rohrer</p>
                 </div>
                 <div class="modal-footer">
@@ -161,7 +160,11 @@
 </body>
 
 <!-- footer -->
-<footer>
+<footer style="z-index: 1;">
     &copy; Information Systems at Carnegie Mellon University | 5000 Forbes Avenue, Pittsburgh, PA 15213 | (412) 268-3259
+    <br>
+    Current website prototyping and development © Wenqi Deng, Steve Zhou, Katherine Makarska 
+    <br>
+    Previous website prototyping and development © Erin Dieringer, Zoe Feng, Arnav Luthra, Abbey Mui and Pooja Penninti. <br>
 </footer>
 </html>

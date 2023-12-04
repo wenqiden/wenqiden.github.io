@@ -1,6 +1,7 @@
 var btn = document.getElementById('filter-btn');
 var main = document.getElementById('project-main-container');
 var filter = document.getElementById('filter-list');
+var close = document.getElementById('filter-close-btn');
 
 document.addEventListener('click', function(e) {
     if (!filter.contains(e.target) && filter.style.display == 'block') {
@@ -11,6 +12,12 @@ document.addEventListener('click', function(e) {
         filter.style.display = 'block';
         main.style.filter = 'blur(3px) grayscale(50%)';
     }
+});
+
+close.addEventListener('click', function(e) {
+    
+    filter.style.display = 'none';
+    main.style.filter = 'none';
 });
 
   

@@ -274,6 +274,8 @@ button#filter-btn {
     height: 2.5vw;
 }
 
+
+
 button#filter-btn:hover {
     box-shadow: 0 0 0 0.1rem rgba(131, 131, 131, 0.25);
 }
@@ -315,10 +317,29 @@ div.filter-list {
     height: 85vh;
     float: left;
     background-color: rgba(255, 255, 255, 0.7);
-    overflow: scroll;
+    overflow-y: auto;
     margin-top: 5vh;
     z-index: 1;
     display: none;
+}
+
+
+div.filter-list::-webkit-scrollbar {
+    -webkit-appearance: none;
+}
+
+div.filter-list::-webkit-scrollbar:vertical {
+    width: 11px;
+}
+
+div.filter-list::-webkit-scrollbar:horizontal {
+    height: 11px;
+}
+
+div.filter-list::-webkit-scrollbar-thumb {
+    border-radius: 8px;
+    border: 2px solid white;
+    background-color: rgba(0, 0, 0, .5);
 }
 
 h4.filter-title {
@@ -355,6 +376,8 @@ input.year-input-all {
     margin-bottom: 0.5vw;
 }
 
+
+
 label.goal {
     margin-left: 1vw;
     margin-bottom: 0.5vw;
@@ -381,7 +404,9 @@ input.tech-input {
 div.placeholder {
     margin-top: 2vw;
 }
-
+div.mobile-card {
+    display: none;
+}
 
 @keyframes typing {
     from {
@@ -426,6 +451,21 @@ input.goal-input-all {
     margin-right: 0.5vw;
 }
 
+button#filter-close-btn {
+    float: right;
+    background-color:#ddd;
+    border: none;
+    border-radius: 50%;
+    top: 2vw;
+    width: 2vw;
+    height: 2vw;
+    position: sticky;
+}
+
+button#filter-close-btn:hover {
+    box-shadow: rgba(45, 35, 66, 0.4) 0 1px 2px, rgba(45, 35, 66, 0.3) 0 2px 5px -2.5px, #193d3d 0 -2.4px 0 inset;
+}
+
 input.tech-input-all {
     margin-right: 0.5vw;
 }
@@ -443,7 +483,11 @@ input.tech-input-all {
         filter: blur(0);
       }
   }
-  
+.navbar-nav {
+    text-align: right;
+    margin-left: auto;
+}
+
 h5#typewrite {
     width: max-content;
     padding: 0.1vw;
@@ -459,7 +503,7 @@ img.scotty-left {
     float: left;
     width: 10vw;
     transform: scaleX(-1);
-    margin-left: 10vw;
+    margin-left: 7vw;
     filter: blur(4px);
     animation: transform 0.75s forwards, fade-in 0.5s 0.5s forwards cubic-bezier(0.11, 0, 0.5, 0);
     animation-delay: 0.3s;
@@ -469,7 +513,224 @@ img.scotty-right {
     float: right;
     width: 10vw;
     filter: blur(4px);
-    margin-right: 10vw;
+    margin-right: 7vw;
     animation: transform 0.75s forwards, fade-in 0.5s 0.5s forwards cubic-bezier(0.11, 0, 0.5, 0);
     animation-delay: 0.3s;
+}
+
+h5#mobile {
+    display: none;
+}
+
+footer {
+    height: max-content;
+    font-size: 1vw;
+}
+
+div.section-title {
+    margin-top: 2.5vw;
+    margin-bottom: 2.5vw;
+}
+
+@media screen and (max-width: 992px) {
+    div.container {
+        margin-top: 5vw;
+    }
+    img.scotty-left {
+        margin-left: -0.5vw;
+    }
+    img.scotty-right {
+        margin-right: -0.5vw;
+    }
+    div.banner {
+        margin-top: 3vw;
+        padding: 7.5vw;
+        position: absolute;
+        height: 20vw;
+        left: 0;
+    }
+    h5#typewrite {
+        font-size: 2vw;
+    }
+    h5#join {
+        font-size: 2vw;
+    }
+}
+
+
+@media screen and (max-width: 576px) {
+    div.container {
+        margin-top: 25vw;
+    }
+
+    img.scotty-left {
+        margin-left: 1.5vw;
+        margin-top: 5vw;
+        width: 15vw;
+    }
+    img.scotty-right {
+        margin-right: 1.5vw;
+        margin-top: 5vw;
+        width: 15vw;
+    }
+    h5#typewrite {
+        display: none;
+    }
+    h5#mobile {
+        padding: 0.1vw;
+        display: block;
+        margin: auto;
+        font-size: 4vw;
+        width: 50%;
+    }
+    h5#join {
+        font-size: 4vw;
+    }
+    img.img-background {
+        height: 40vw;
+    }
+    div.img-banner {
+        margin-top: 5vw;
+    }
+    div.banner {
+        margin-top: 5vw;
+        padding: 7.5vw;
+        position: absolute;
+        height: 30vw;
+        left: 0;
+    }
+    button.apply-btn {
+        font-size: 3vw;
+        padding: 2vw;
+        margin-top: -2vw;
+    }
+    li {
+        width: 100%;
+    }
+    ul {
+       width: 100%;
+    }
+    div.home-description {
+        font-family: 'Arimo', sans-serif;
+        font-size: 1em;
+        width: 90%;
+        margin: auto;
+        margin-top: 10vw;
+    }
+    .navbar-nav {
+        margin-top: 1vw;
+        border-top: 1px solid white;
+        text-align: center;
+        display: block;
+        background-color: #931120;
+    }
+    li.nav-item {
+        display: inline-block;
+        border-right: 1px solid white;
+        width: 30%;
+        margin: auto;
+        
+    }
+    li.last {
+        border-right: none;
+    }
+    .navbar-brand {
+        text-align: center;
+        display: block;
+        width: 100%;
+    }
+    .cmu-brand {
+        display: inline-block;
+        margin: auto;
+    }
+    div.carousel-desktop {
+        display: none;
+    }
+    div.mobile-card {
+        display: block;
+        width: 95%;
+        height: 20vw;
+        margin: auto;
+        overflow: scroll;
+        border: 1px solid #ddd;
+        font-size: 3vw;
+        margin-top: 2vw;
+    }
+    div.testimonial-text {
+        width: 80%;
+        display: inline-block;
+    }
+    img.testimonial-img {
+        width: 15%;
+        height: max-content;
+        border-radius: 50%;
+        display: inline-block;
+        vertical-align: top;
+        margin-top: 2.5vw;
+    }
+    div.home-button-container {
+        width: 50%;
+        margin: auto;
+        display: inline-block;
+        height: max-content;
+        margin-bottom: 25vw;
+    }
+    button.search-btn {
+        width: 7vw;
+        height: 7vw;
+    }
+    button.home-btn {
+        margin: 1vw;
+    }
+    input.search-bar {
+        height: 7vw;
+        font-size: 3vw;
+    }
+    h2.subtitle {
+        width: 95%;
+        font-size: 1rem;
+    }
+
+    button#filter-btn {
+        width: 73vw;
+        height: 5vw;
+        margin-top: 1vw;
+        margin-bottom: 1vw;
+    }
+    div.logos-container {
+        height: 70vw;
+        margin-bottom: 5vw;
+    }
+    div.logos {
+        height: 70vw;
+    }
+    img.logo {
+        width: 30vw;
+        height: 30vw;
+    }
+    div.project-btn-container {
+        margin-bottom: 15vw;
+    }
+    div#breadcrumb-home {
+        display: none;
+    }
+    div.section-title {
+        margin-top: 5vw;
+        margin-bottom: 5vw;
+    }
+    div.filter-list {
+        width: 100vw;
+        display: none;
+        margin-top: 5vw;
+    }
+    button#filter-close-btn {
+        float: right;
+        background-color:#ddd;
+        border: none;
+        border-radius: 50%;
+        margin-top: 2vw;
+        width: 7vw;
+        height: 7vw;
+    }
+    
 }

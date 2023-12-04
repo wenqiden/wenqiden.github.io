@@ -30,24 +30,19 @@
     <!-- navigation -->
     <header>
         <nav class="navbar navbar-expand-md navbar-dark fixed-top" style="background-color:#931120; height: 10vh;">
-            <a class="navbar-brand" href="https://www.cmu.edu/"><img src="./static/img/CMU_White.png"></a>
-            <button class="navbar-toggler d-lg-none" type="button" data-toggle="collapse" data-target="#navbarsExampleDefault" aria-controls="navbarsExampleDefault" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-            </button>
-
-            <div class="collapse navbar-collapse justify-content-end" id="navbarsExampleDefault">
-                <ul class="navbar-nav navbar-right">
-                    <li class="nav-item active">
-                        <a class="nav-link hover-underline-animation" href="index.html" style="color: white; font-weight: bold;">Home<span class="sr-only">(current)</span></a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link hover-underline-animation" href="projects.html" style="color: white; font-weight: bold;">Projects</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link hover-underline-animation" href="becomepartner.html" style="color: white; font-weight: bold;">Apply</a>
-                    </li>
-                </ul>
-            </div>
+            <a class="navbar-brand" href="https://www.cmu.edu/"><img class="cmu-brand" src="./static/img/CMU_White.png"></a>
+            
+            <ul class="navbar-nav">
+                <li class="nav-item active">
+                    <a class="nav-link hover-underline-animation" href="index.html" style="color: white; font-weight: bold;">Home<span class="sr-only">(current)</span></a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link hover-underline-animation" href="projects.html" style="color: white; font-weight: bold;">Projects</a>
+                </li>
+                <li class="nav-item last">
+                    <a class="nav-link hover-underline-animation" href="becomepartner.html" style="color: white; font-weight: bold;">Apply</a>
+                </li>
+            </ul>
         </nav>
     </header>
     <div class="container">
@@ -61,7 +56,7 @@
                 <div class="inner-banner">
                 <img class="scotty-left" src="./static/img/cmu-scotty.png" alt="CMU scotty">
                 <img class="scotty-right" src="./static/img/cmu-scotty.png" alt="CMU scotty">
-                <div style="display: block; text-align:center;"> <h5 id="typewrite"></h5><h5 id="join">Join us as a community partner.<h5></div>
+                <div style="display: block; text-align:center;"> <h5 id="typewrite"></h5><h5 id="mobile">Want to work with top students at zero cost?</h5><h5 id="join">Join us as a community partner.<h5></div>
                 <a href="becomepartner.html"><button class="apply-btn">Apply to be a Partner</button></a>
                 </div>
         </div>
@@ -73,7 +68,7 @@
                 <li>At the completion of the project, each team must provide a sustainable solution that fits the client's objectives, organization constraints and capabilities.</li>
             </ul>
         </div>
-        <div class="row">
+        <div class="row carousel-desktop">
             <h2 class="display-2 testimonial-title">Testimonials</h2>
             <div id="testimonialIndicators" class="carousel slide">
                 <div class="carousel-indicators">
@@ -106,10 +101,25 @@
                 </button>
             </div>
         </div>
+
+        <div class="row mobile-testimonial">
+            <div class="mobile-card">
+                <img class="testimonial-img" src="./static/img/GregVictor.png" class="d-block w-100">
+                <div class="testimonial-text"><p style="font-weight:bold;">Greg Victor, CEO of International Free Expression Project</p> says “The International Free Expression Project has been a CMU Information Systems Community Partner twice, and I cannot say enough about the efficiency of the program administration, the quality of the students, and the excellence of the work they produced. The first group of students helped us develop a contact/donor database. The second group worked with us and a startup, Roadies Lab, to create a unique online art gallery featuring the work of suppressed and persecuted artists. Both groups were organized, dedicated, hardworking, creative and a pleasure to work with.”</div>
+            </div>
+            <div class="mobile-card">
+                <img class="testimonial-img" src="./static/img/AshleyPriore.png" class="d-block w-100">
+                <div class="testimonial-text"><p style="font-weight:bold;">Ashley Priore, Founder and CEO of Queen's Gambit</p> says “The CMU IS Consulting Project connects nonprofit organizations with top-tier IS student consultants to deliver high-quality solutions and strategic advising to enhance missions and visions. Through this program, my nonprofit organization was able to increase the number of schools we impact by close to 60% thanks to the development of software to strengthen our community mapping directory. The student consultants became a part of our small but mighty team and continue to impact our work to this day.”</div>
+            </div>
+            <div class="mobile-card">
+                <img class="testimonial-img" src="./static/img/Bill.png" class="d-block w-100">
+                <div class="testimonial-text"><p style="font-weight:bold;">Bill DiPlacido, Business Analyst from CORE</p> says, “What a wonderful experience over the last couple of years working with two amazing student teams.  The CMU Community Partners programs allows us to develop solutions our teams have not had the time to complete projects that enables us to automate processes that were very labor intensive.  They learned new technologies quickly to develop in technologies like WordPress or Radzen that we can continue to support for many years to come, furthering CORE's commitment to our mission to save and heal lives through donation.”</div>
+            </div>
+        </div>
         <div class="row">
             <div class="home-button-container">
-            <a href="becomepartner.html"><button class="apply-btn" style="background-color: #008F91">Apply to be a Partner</button></a>
-            <a href="projects.html"><button class="apply-btn" style="background-color: #008F91">View Projects</button></a>
+            <a href="becomepartner.html"><button class="apply-btn home-btn" style="background-color: #008F91">Apply to be a Partner</button></a>
+            <a href="projects.html"><button class="apply-btn home-btn" style="background-color: #008F91">View Projects</button></a>
             </div>
         </div>
     </div>
@@ -117,7 +127,11 @@
 </body>
 
 <!-- footer -->
-<footer>
+<footer style="z-index: 1;">
     &copy; Information Systems at Carnegie Mellon University | 5000 Forbes Avenue, Pittsburgh, PA 15213 | (412) 268-3259
+    <br>
+    Current website prototyping and development © Wenqi Deng, Steve Zhou, Katherine Makarska 
+    <br>
+    Previous website prototyping and development © Erin Dieringer, Zoe Feng, Arnav Luthra, Abbey Mui and Pooja Penninti. <br>
 </footer>
 </html>
