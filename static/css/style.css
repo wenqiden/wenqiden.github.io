@@ -271,7 +271,7 @@ button#filter-btn {
     font-style: italic;
     color: grey;
     text-align: left;
-    height: 2.5vw;
+    height: 50px;
 }
 
 
@@ -518,6 +518,10 @@ img.scotty-right {
     animation-delay: 0.3s;
 }
 
+i {
+    color: black;
+}
+
 h5#mobile {
     display: none;
 }
@@ -661,8 +665,8 @@ div.section-title {
         display: inline-block;
     }
     img.testimonial-img {
-        width: 15%;
-        height: max-content;
+        width: 10vw;
+        height: 10vw;
         border-radius: 50%;
         display: inline-block;
         vertical-align: top;
@@ -693,9 +697,10 @@ div.section-title {
 
     button#filter-btn {
         width: 73vw;
-        height: 5vw;
+        height: 7vw;
         margin-top: 1vw;
         margin-bottom: 1vw;
+        font-size: 3vw;
     }
     div.logos-container {
         height: 70vw;
