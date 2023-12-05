@@ -51,7 +51,7 @@
         <div id="breadcrumb-home" style="--bs-breadcrumb-divider: url(&#34;data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='8' height='8'%3E%3Cpath d='M2.5 0L1 1.5 3.5 4 1 6.5 2.5 8l4-4-4-4z' fill='currentColor'/%3E%3C/svg%3E&#34;);" aria-label="breadcrumb">
             <ol class="breadcrumb" style="width:max-content;">
               <li style="width:max-content; position:relative; left:6vw;"  class="breadcrumb-item"><a style="width:max-content;" href="index.html">Home</a></li>
-              <li style="width:max-content; position:relative; left:3vw;"  class="breadcrumb-item"><a style="width:max-content;" href="projects.html">Project</a></li>
+              <li style="width:max-content; position:relative; left:3vw;"  class="breadcrumb-item"><a style="width:max-content;" href="projects.html">Projects</a></li>
               <li class="breadcrumb-item active" aria-current="page">Apply</li>
             </ol>
         </div>
@@ -104,8 +104,8 @@
     
     <div id="apply-forms">
         <!-- Buttons for switching forms -->
-        <button onclick="showForm('form1')">67-373</button>
-        <button onclick="showForm('form2')">Community Partner Application</button>
+        <button onclick="showForm('form1')" id="tabBTN1" class="tabBTN">67-373</button>
+        <button onclick="showForm('form2')" id="tabBTN2" class="tabBTN">Community Partner Application</button>
 
         <!-- Iframe for displaying the Google Form -->
         <iframe id="googleForm" style="width:100%; height:500px;"></iframe>

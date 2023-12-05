@@ -377,6 +377,25 @@ input.year-input-all {
     margin-bottom: 0.5vw;
 }
 
+.tabBTN {
+    border:none;
+    background-color:rgb(169, 169, 169);
+    border-right: 0.1vw solid black;
+    border-bottom: 0.1vw solid black;
+}
+
+.tabBTNHighlighted {
+    background-color:rgb(233, 233, 233);
+    border-bottom: none;
+    padding-bottom: 0.1vw;
+}
+
+#tabBTN2 {
+    margin-left: -0.3vw;
+    border-right: none;
+}
+
+
 
 
 label.goal {
@@ -742,5 +761,24 @@ div.section-title {
         width: 7vw;
         height: 7vw;
     }
+    .tabBTN {
+        width: max-content;
+        font-size: 3.5vw;
+        border:none;
+        background-color:rgb(169, 169, 169);
+        border-right: 0.1vw solid black;
+        border-bottom: 0.1vw solid black;
+    }
     
+    .tabBTNHighlighted {
+        background-color:rgb(233, 233, 233);
+        border-bottom: none;
+        padding-bottom: 0.3vw;
+    }
+    
+    #tabBTN2 {
+        margin-left: -1vw;
+        border-right: none;
+    }
 }
+
